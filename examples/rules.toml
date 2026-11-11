@@ -1,0 +1,32 @@
+# watchsort rules — edit freely, then run:
+#   watchsort sort ~/Downloads --rules rules.toml
+# Categories are folder names; extensions need the leading dot.
+# Anything that matches no category lands in "Other".
+
+[settings]
+date_folders = true
+
+[Images]
+extensions = [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"]
+
+[Documents]
+extensions = [".pdf", ".doc", ".docx", ".txt", ".md"]
+
+[Spreadsheets]
+extensions = [".csv", ".xls", ".xlsx"]
+
+[Videos]
+extensions = [".mp4", ".mov", ".mkv", ".webm"]
+
+[Audio]
+extensions = [".mp3", ".wav", ".flac"]
+
+[Archives]
+extensions = [".zip", ".tar", ".gz", ".7z", ".rar"]
+
+[Code]
+extensions = [".py", ".js", ".ts", ".html", ".css", ".json"]
+
+# My own catch-all for installers, so they stop sitting next to PDFs.
+[Installers]
+extensions = [".dmg", ".exe", ".msi", ".pkg", ".deb"]
